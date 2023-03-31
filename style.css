@@ -1,0 +1,85 @@
+body{
+	padding: 0px;
+	
+}
+h1{
+	text-align: center;
+	color: green;
+	padding: 20px;
+}
+nav{
+	background-color: blue;
+	display: grid;
+	place-items: center;
+	margin left:20px ;
+}
+nav ul{
+	list-style-type: none;
+}
+nav ul a{
+	display: inline-block;
+	margin: 0.5px;
+	padding: 20px;
+	text-decoration: none;
+	color: green;
+	transition: 0.2s ease-in;
+	font-size:17px;
+
+}
+nav ul a:hover{
+	background-color:red;
+	color: white;
+	text-transform:uppercase;
+	text-spacing:20px;
+	padding: 6px 12px;
+	border-radius: 10px;
+}
+
+}
+.items{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 30px 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+}
+.item img{
+	width: 50%;
+	height: 300px;
+	object-fit: auto;
+	cursor: pointer;
+	transition: 0.2x ease;
+
+}
+.item img:hover{
+	transition: scale(1.04);
+}
+.item h3{
+	padding: 5px;
+	text-align: center;
+}
+.item button{
+	padding: 5px 30px;
+	border: none;
+	outline: none;
+	background-color: blue;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 20px;
+	display: block;
+	margin: 0 auto;
+	transition: 0.2x all;
+}
+item button:hover{
+	transition: scale(1.04);
+}
+
+@media screen and (max-width:1000px){
+	.items{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (max-width:768px){
+	.items{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
